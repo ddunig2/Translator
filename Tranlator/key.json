@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "psychic-iridium-228604",
+  "private_key_id": "8be26dee34f2547b015bccf94fbb24f173e19e04",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC/aKJdLFvR3QRK\noa9wX1iMHRBrDG53Si2VrxWS8fCKg7dv8RvXNTEEvBizrirjzQ7XL0wj6IPz/gRa\nvmlTRRMaAMAIVb/1EFl4LeOHEQ9vk6OR6IgC2aKX0kaaHAQRDC1LtdroAkDIgjY4\n7OHidw24J52E5BW0vYqL0CIcjyv5kJSzMLbtRrO+XAsXzhp5kLnpuXqLODpQ/5/3\nN3hcDJiOgtXu2fm7MGzJTkYpnb6+DWfDezkJ3T4mWlMLWfFfwwSXS9Pvl67ipUCq\ne4LJOykfoOZbsjpSOQnrV/tWBSEQxCjH4B36CW1b+3Xl84X7DKns4cY3MuSiE2E7\n/YwVEUyhAgMBAAECggEAArFoHeWZr93jQWHNmigUQsnmpQvsarQd6LIJPJtX8Bn2\n8O2wb6ZjX3q+QfpqhvCX06waHxP2lc5qTSTKTnItiO9PZFqhABOcH6RNJAWH3SDz\nk2IlNj2Nw6MxLDpGTh9YzIy1JRAhjVSkKsg97BnS1QdFKIVNPyEOz8Vkknhq9OiX\nKFbdO9amNn9l/ntz/+Tw000srVfJJ+Au7ZFPBQi/BxCcdzx7fCEN6+U1caFPKYkg\nVCM1mZ4c64klmubs2I3ndfl8etDjRhJE+QAKXHGSkn5SY6seFwJgQSVWJz0zOzuG\nA9B5AkRd+jder4WS61w+lE4xY6G1Nh4zM/PHlXL8UQKBgQDvtozfQTWmImNzXeZu\no1XKCAvMsKR0u+0awcdR411gHgkJzvXb4x/6dLtMy8KR9JRzA158kW/gQvF6mS6l\n4WxkBLBqNx6TX8V5MOuB0L6G4f9mvB5XB0XIuMOFqRDHnsqSe11j3dwZ5K+QHG4B\nxMUXbIRmH6IPQLnpcIpVNey5MQKBgQDMaebshof45tm5nSY7UGzQ9jTTWPcQCAZO\ng4Kfq2awCFKkTvcXPIqGKSguE25LUXhMtLfwhgqwxi/WpSRfMbXNC73V4YfrOxe2\nDC/J3SP51a9GMImqPNFGXM7I6VRZ4WBDEdh6xtIAeyOZDN0TXslij2ujFhk7dfQ7\nUGRDj+jucQKBgFl1nTksUuM/bjH91yNvHXMacZzgR1+xSplzu/kZix112BWrASIg\nryx/J+9PE7v4tPX/SeHfPQtKsGf6hugtKpBhF51sGKMTWNUTprB5wMEB0pj6l7AO\n7MIuAfn90F9PKXZlR8MfZybaq5JyqbNLReqp+vdJ0ucyVq+B6n5Gc6PhAoGBAKlc\nmQqhUCkmQ4BpNtLwCKh9RTlSvaiXrXoBtglKvtLconQmRM0IyRDtKrA6Qyi+QHj1\nRm1O8a6TFfG2c9M3YZSYxNlfefioxjV8FWAgC/2kUQtLjdPxfcbZgC6wO8YYWGRZ\ndc4LytTBMbZOFSFGaH5zq8+8sH02dntqWRgtNOXRAoGBANKWAT277vwigJAea0/M\nyqO9QFGN0VUrGUZhygSD8m7m8hfnGej7Zmly5RD5iII/kcNGFrN9dGqwR1GgDWgy\nE4AmoZY/claTsSr3QvU5fRiWEw5F3e6RkGrNhgjicZzrb3YTfl8XpjJsuYACZyPN\nTy5L5Cv8PpfR6BBfYik+vOgK\n-----END PRIVATE KEY-----\n",
+  "client_email": "lugduni@psychic-iridium-228604.iam.gserviceaccount.com",
+  "client_id": "102945405482743021292",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lugduni%40psychic-iridium-228604.iam.gserviceaccount.com"
+}
