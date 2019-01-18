@@ -17,10 +17,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.border.EtchedBorder;
-//import java.awt.Toolkit;
 
 @SuppressWarnings("serial")
-public class mainScreen extends JFrame {
+public class MainScreen extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel lblNewLabel;
@@ -29,17 +28,11 @@ public class mainScreen extends JFrame {
 	private JRadioButton rdbtnSpanishToEnglish;
 	private JButton btnTranslate;
 	private JLabel label;
-	private myTranslator mt;
-
-	/**
-	 * Launch the application.
-	 */
-	/**
-	 * Create the frame.
-	 */
+	private MyTranslator mt;
 	
-	public mainScreen() {
-		mainScreen1();
+	public MainScreen() {
+		setResizable(false);
+		initialize();
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -51,33 +44,27 @@ public class mainScreen extends JFrame {
 		});
 		
 	}
-	
-	public void mainScreen1() {
+	public void initialize() {
 		setTitle("Translator");
 		label = new JLabel();
 		label.setFont(new Font("SansSerif", Font.BOLD | Font.ITALIC, 18));
 		label.setBounds(23, 36, 468, 34);
 		
-		ImageIcon imageIcon1 = new ImageIcon("C:\\\\Users\\\\lugdu\\\\eclipse-workspace\\\\StockTrading\\\\Translation_Icon.png"); // load the image to a imageIcon
-		Image image1 = imageIcon1.getImage(); // transform it 
+		ImageIcon imageIcon1 = new ImageIcon("Translation_Icon.png");
+		Image image1 = imageIcon1.getImage();
 		Image newimg1 = image1.getScaledInstance(30, 30,  java.awt.Image.SCALE_SMOOTH);
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(newimg1));;
 		lblNewLabel_3.setBounds(2, 0, 41, 42);
 		lblNewLabel_3.setVisible(false);
 		
-		//contentPane.setVisible(true);
-		
-		ImageIcon imageIcon = new ImageIcon("Translation_Icon.png"); // load the image to a imageIcon
-		Image image = imageIcon.getImage(); // transform it 
-		Image newimg = image.getScaledInstance(5000, 5000,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
-		imageIcon = new ImageIcon(newimg);
-		//setIconImage(imageIcon);
+		ImageIcon imageIcon = new ImageIcon("Translation_Icon.png"); 
+		Image image = imageIcon.getImage();
+		Image newimg = image.getScaledInstance(5000, 5000,  java.awt.Image.SCALE_SMOOTH); 
 		setIconImage(newimg);
-		mt = new myTranslator();
+		mt = new MyTranslator();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 182, 113);
-		//setBounds(100, 100, 528, 355);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(102, 204, 255));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -143,6 +130,8 @@ public class mainScreen extends JFrame {
 		txtrH.setFont(new Font("MS PGothic", Font.BOLD | Font.ITALIC, 14));
 		txtrH.setLineWrap(true);
 		txtrH.setBounds(88, 162, 144, 74);
+		txtrH.setCaretColor(new Color(255, 255, 204));
+		
 		contentPane.add(txtrH);
 		
 		JTextArea textArea_1 = new JTextArea();
@@ -152,6 +141,7 @@ public class mainScreen extends JFrame {
 		textArea_1.setFont(new Font("MS PGothic", Font.BOLD | Font.ITALIC, 14));
 		textArea_1.setLineWrap(true);
 		textArea_1.setBounds(295, 162, 146, 74);
+		textArea_1.setCaretColor(new Color(255, 255, 204));
 		contentPane.add(textArea_1);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
@@ -170,7 +160,6 @@ public class mainScreen extends JFrame {
 		btnTranslate.setBackground(new Color(255, 255, 255));
 		btnTranslate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				//thread for faster response, also doesnt hold the button click for everything to happen
 				Thread t1 = new Thread(new Runnable() {
 				    @Override
 				    public void run() {
@@ -179,7 +168,6 @@ public class mainScreen extends JFrame {
 							lblNewLabel_1.setText("English");
 							lblNewLabel_2.setText("Spanish");
 							if(!txtrH.getText().equals("")) {
-								//myTranslator mt = new myTranslator();
 								textArea_1.setText(
 								mt.translateThis(txtrH.getText(), "en", "es"));
 							}
@@ -187,7 +175,6 @@ public class mainScreen extends JFrame {
 							lblNewLabel_1.setText("Spanish");
 							lblNewLabel_2.setText("English");
 							if(!txtrH.getText().equals("")) {
-								//myTranslator mt = new myTranslator();
 								textArea_1.setText(
 								mt.translateThis(txtrH.getText(), "es", "en"));
 							}
@@ -223,7 +210,6 @@ public class mainScreen extends JFrame {
 				timeMillis = System.currentTimeMillis();
 				i++;
 			}
-			//System.out.println(time);
 			
 		}
 	}

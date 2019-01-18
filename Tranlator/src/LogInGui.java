@@ -16,25 +16,21 @@ import java.awt.Component;
 import java.awt.Window.Type;
 import java.awt.Toolkit;
 
-public class logingui {
+public class LogInGui {
 
 	public JFrame frmLogIn;
 	private JTextField textField;
 	private JPasswordField passwordField;
 	JLabel lblNewLabel;
-	//private mainScreen ms;
 	private Register rt;
 	private boolean valid;
 	JButton btnLogIn;
 	
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					logingui window = new logingui();
+					LogInGui window = new LogInGui();
 					window.frmLogIn.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -43,12 +39,8 @@ public class logingui {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
-	public logingui() {
+	public LogInGui() {
 		initialize();
-		//thread for faster start up
 		Thread t1 = new Thread(new Runnable() {
 		    @Override
 		    public void run() {
@@ -58,14 +50,11 @@ public class logingui {
 		t1.start();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		frmLogIn = new JFrame();
 		frmLogIn.setType(Type.POPUP);
 		frmLogIn.setBackground(Color.GRAY);
-		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\lugdu\\eclipse-workspace\\StockTrading\\key_icon-01.png"));
+		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage("key_icon-01.png"));
 		frmLogIn.setTitle("Log In");
 		frmLogIn.setBounds(100, 100, 329, 208);
 		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -96,11 +85,11 @@ public class logingui {
 					lblNewLabel.setText("Please make sure all fields are entered");
 					return;
 				}
-				valid = rt.loign(textField.getText(), new String(passwordField.getPassword()));
+				valid = rt.logIn(textField.getText(), new String(passwordField.getPassword()));
 				lblNewLabel.setText(valid?"Correct log in":"Wrong user name and or password");
 				if(valid) {
 					frmLogIn.dispose();
-					mainScreen ne = new mainScreen();
+					MainScreen ne = new MainScreen();
 					ne.setVisible(true);
 				}
 				

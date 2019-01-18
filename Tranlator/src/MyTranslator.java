@@ -3,10 +3,10 @@ import com.google.cloud.translate.Translate.TranslateOption;
 import com.google.cloud.translate.TranslateOptions;
 import com.google.cloud.translate.Translation;
 
-public class myTranslator {
+public class MyTranslator {
 	Translate translate;
 	Translation translation;
-	public myTranslator() {
+	public MyTranslator() {
 		translate = TranslateOptions.getDefaultInstance().getService();
 		
 	}

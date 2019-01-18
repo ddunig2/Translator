@@ -7,17 +7,12 @@ public class Register {
 	Connection con;
 	Statement st;
 	String url;
-
-//	public static void main(String args[]) {
-//		Register rt = new Register();
-//		rt.connectToDataBase();
-//		rt.loign("ddunig7", "665215");
-//	}
+	
 	public Register() {
-		connectToDataBase(); 
+		connectToDatabase(); 
 	}
 
-	public void connectToDataBase() {
+	public void connectToDatabase() {
 		try {
 			url = "jdbc:mysql://localhost:3306/idlu7";
 			con = DriverManager.getConnection(url,"root","");
@@ -26,7 +21,7 @@ public class Register {
 		}
 	}
 
-	public boolean loign(String userName, String password) {
+	public boolean logIn(String userName, String password) {
 		try {
 			String query = "SELECT password FROM accounts WHERE username = '" + userName+"'";
 			Statement st = con.createStatement();
