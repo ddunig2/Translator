@@ -7,7 +7,6 @@ public class Register {
 	Connection con;
 	Statement st;
 	String url;
-	//dfgkl
 	
 	public Register() {
 		connectToDatabase(); 
