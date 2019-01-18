@@ -24,7 +24,7 @@ public class RegisterTest {
 	public void testInvalidLogIn() {
 		assertEquals(register.logIn("ddunig2", "Password"), false);
 	}
-	
+
 	@Test
 	public void testValidLogIn() {
 		assertEquals(register.logIn("ddunig2", "665219"), true);

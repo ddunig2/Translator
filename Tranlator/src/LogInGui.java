@@ -25,7 +25,7 @@ public class LogInGui {
 	private Register rt;
 	private boolean valid;
 	JButton btnLogIn;
-	
+	 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

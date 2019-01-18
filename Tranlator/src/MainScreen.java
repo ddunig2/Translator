@@ -57,7 +57,7 @@ public class MainScreen extends JFrame {
 		lblNewLabel_3.setIcon(new ImageIcon(newimg1));;
 		lblNewLabel_3.setBounds(2, 0, 41, 42);
 		lblNewLabel_3.setVisible(false);
-		
+		 
 		ImageIcon imageIcon = new ImageIcon("Translation_Icon.png"); 
 		Image image = imageIcon.getImage();
 		Image newimg = image.getScaledInstance(5000, 5000,  java.awt.Image.SCALE_SMOOTH); 

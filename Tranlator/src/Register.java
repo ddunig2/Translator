@@ -6,7 +6,7 @@ import java.sql.Statement;
 public class Register {
 	Connection con;
 	Statement st;
-	String url;
+	String url; 
 	
 	public Register() {
 		connectToDatabase(); 

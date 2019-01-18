@@ -9,7 +9,7 @@ public class MyTranslator {
 	public MyTranslator() {
 		translate = TranslateOptions.getDefaultInstance().getService();
 		
-	}
+	} 
 	public String translateThis(String text,String fromCode,String toCode) {
 		translation = translate.translate(text, TranslateOption.sourceLanguage(fromCode),
 				TranslateOption.targetLanguage(toCode));

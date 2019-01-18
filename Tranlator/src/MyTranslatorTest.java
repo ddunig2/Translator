@@ -7,7 +7,7 @@ public class MyTranslatorTest {
 	@Test
 	public void testOneEnglishToSpanish() {
 		assertEquals(myTranslator.translateThis("hello", "en", "es"), "Hola");
-	}
+	} 
 	
 	@Test
 	public void testWordSpanishToEnglish() {
